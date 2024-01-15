@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const CLIENT_ID = "5a881e05966b46e6a834390e80c37713";
-  const REDIRECT_URI = "http://134.209.158.118:3000";
+  const REDIRECT_URI = "https://shark-app-hr6bm.ondigitalocean.app/";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
   const SCOPE = "streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
@@ -22,7 +22,7 @@ function App() {
     let storedToken = window.localStorage.getItem("token");
   
     // Check if the provided access token is available
-    const providedToken = "BQAH8-GpbiGlusNw-T0Xb5MGq6BmaOB3eJn2QozAtfz7NkcqoUA9HlhU10k58SDufC8DUIGU91MWukeRi1eC5v54LOHyHRrIFAepgWcWdlEgRO3lzr8uWjwbuv13QqRNAYFs51Pqwjit5vcP-iQW6J9gAG7Ad5i6qPwzBvyGQPRtnbxAOVMpAVOXk_K1GI7Od-3NfUa2zXtPCjb2YzDdDYR8TvBYHfvw9FCpSfSlQSLb_FpX0p-R2w";
+    const providedToken = "";
   
     if (!storedToken && hash) {
       storedToken = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1];
