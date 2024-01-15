@@ -22,7 +22,7 @@ function App() {
     let storedToken = window.localStorage.getItem("token");
   
     // Check if the provided access token is available
-    const providedToken = "BQCcMltMDeu0IjLFmdCms8CemKIXT8JAJoMKyPfXfHmVbuzDFD3swMhn-E0ID4GID3jodGAZZTwb40w0kyYUwds0_z6SQdi8Ti8RYP3PF3UmgW3L1_x3pKujfQiHU7u-buCcSNOFrtAgpcsp2WNWms6ZXNijgXE-MdWH9tythCyXS7luMYOpiZm1oX0FIyrMdWr-rtQwn0brDv6xmenE0hdSfEdKjHiD422rVSIjfj5ZOa5SmACHeQ";
+    const providedToken = "BQBrcUcsaTY2n4iziK2KvHqERL4etCr7j8dwV1xxzBiHBLF-gch9lsYuOBK6MM8viFhOr9Z4hlX2J6SdrBsMAH10QSE-ivlXrvUDq5Znf3SIJhhk0g0h-Nub9Dd9dottKTeW80nSHaXdeRCrJ4-xGobSUBj_xVovgR3i88VkrQAL0PnuShpREE7p3xs9HLCHqIVqI6mCuwXU3RrKy90us3icyKCx2PlynIRaBnc1AZIbP7-aOXkciQ";
   
     if (!storedToken && hash) {
       storedToken = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1];
