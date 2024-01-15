@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const CLIENT_ID = "5a881e05966b46e6a834390e80c37713";
-  const REDIRECT_URI = "https://shark-app-hr6bm.ondigitalocean.app/";
+  const REDIRECT_URI = "https://shark-app-hr6bm.ondigitalocean.app";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
   const SCOPE = "streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
